@@ -4,4 +4,4 @@ title: "website"
 
 This is a test website generated using Quarto.
 
-About contains a sample, interactive draw.io diagram.
+The About page contains a sample, interactive draw.io diagram.
