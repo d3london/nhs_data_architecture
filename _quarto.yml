@@ -3,18 +3,18 @@ project:
   output-dir: docs  
 
 website:
-  title: "website"
+  title: "NHS Data Architecture"
   navbar:
-    left:
+    background: secondary
+  sidebar: 
+    style: "docked"
+    search: false
+    contents:
       - href: index.qmd
-        text: Home
-      - about.qmd
+      - href: main.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: zephyr
     css: styles.css
     toc: true
-
-
-
