@@ -2,21 +2,23 @@
   {
     "objectID": "main.html",
     "href": "main.html",
-    "title": "Data architecture for national flows",
+    "title": "Data architecture and flows: National",
     "section": "",
-    "text": "Early preview v0.1\nBest viewed in web browser, and full screen.",
+    "text": "Early preview v0.1\nThis diagram illustrates data flows that meet the following criteria:\n\nOn a national scale (spanning all NHS regions)\nOccur electronically (data is managed and transferred via API)\nManaged systematically (the same process is reproduced across all extractions and transfers).\n\nEach category of data flows can be toggled. These, and source systems, are described in subsections. Best viewed in computer web browser, and in full screen.",
     "crumbs": [
-      "Data architecture for national flows"
+      "NATIONAL",
+      "National diagram"
     ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Mapping NHS data architecture",
+    "title": "Introduction",
     "section": "",
-    "text": "Early preview v0.1\nDashboards that show structure and flow of healthcare data in NHS England along existing architectures.",
+    "text": "Early preview v0.1\nData architecture and flow diagrams that illustrate the generation and movement healthcare data in NHS England.",
     "crumbs": [
-      "Mapping NHS data architecture"
+      "MAIN",
+      "Introduction"
     ]
   }
 ]

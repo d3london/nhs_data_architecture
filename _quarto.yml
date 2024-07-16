@@ -3,15 +3,21 @@ project:
   output-dir: docs  
 
 website:
-  title: "NHS Data Architecture"
+  title: "Mapping NHS Data Architecture and Flows"
   navbar:
     background: secondary
   sidebar: 
     style: "docked"
     search: false
     contents:
-      - href: index.qmd
-      - href: main.qmd
+        - section: "MAIN"
+          contents: 
+            - href: index.qmd
+              text: Introduction
+        - section: "NATIONAL"
+          contents: 
+            - href: main.qmd
+              text: National diagram
 
 format:
   html:

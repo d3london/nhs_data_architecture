@@ -1,7 +1,9 @@
 ---
-title: "Mapping NHS data architecture"
+title: "Introduction"
 ---
 
 __Early preview v0.1__
 
-Dashboards that show structure and flow of healthcare data in NHS England along existing architectures.
+Data architecture and flow diagrams that illustrate the generation and movement healthcare data in NHS England.
+
+This is an early proof of concept, and is incomplete. Feedback and collaboration are invited.    
