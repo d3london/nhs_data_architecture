@@ -4,11 +4,11 @@ title: "Introduction"
 
 __Early preview v0.1__
 
-Data architecture and flow diagrams that illustrate the generation and movement healthcare data in NHS England.
+Deep dive into health data architecture, data flows, and data capabilities across NHS England, through detailed schematics and explainers.
 
-This is an early proof of concept, and is incomplete. Feedback and collaboration are invited.    
+This is a early proof of concept and a 'living document' that we are continually adding to. Feedback and collaboration are invited.
 
-Previous version in [Zhang et al., 2023](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00157-7/fulltext)
+Previous version in [Zhang, Morley et al., 2023](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00157-7/fulltext)
 
-![Figure of Data flows from Zhang et al., 2023](https://www.thelancet.com/cms/attachment/1d2d7c63-88db-46ed-92bb-d3a917918f42/gr2.jpg)
-![Figure of Data extractions from Zhang et al., 2023](https://www.thelancet.com/cms/attachment/e4d7c4dd-5653-4740-b31a-a0cf7469ee43/gr4.jpg)
+![Figure of Data flows from Zhang, Morley et al., 2023](https://www.thelancet.com/cms/attachment/1d2d7c63-88db-46ed-92bb-d3a917918f42/gr2.jpg)
+![Figure of Data extractions from Zhang, Morley et al., 2023](https://www.thelancet.com/cms/attachment/e4d7c4dd-5653-4740-b31a-a0cf7469ee43/gr4.jpg)

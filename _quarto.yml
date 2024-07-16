@@ -3,7 +3,7 @@ project:
   output-dir: docs  
 
 website:
-  title: "Mapping NHS Data Architecture and Flows"
+  title: "NHS Data Architecture & Data Flows"
   navbar:
     background: secondary
   sidebar: 
@@ -13,12 +13,15 @@ website:
         - section: "MAIN"
           contents: 
             - href: index.qmd
-              text: Introduction
+              text: Introduction       
         - section: "NATIONAL"
           contents: 
-            - href: main.qmd
-              text: National diagram
-
+            - href: national/main.qmd
+              text: National schematic
+            - href: national/sources.qmd
+              text: Data sources
+            - href: national/flows.qmd
+              text: Data flow categories
 format:
   html:
     theme: zephyr
