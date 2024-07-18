@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../national/main.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">National Schematics</span></a>
+ <span class="menu-text">National Schematic</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -156,7 +156,19 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#patient-administration" id="toc-patient-administration" class="nav-link active" data-scroll-target="#patient-administration">Patient administration</a></li>
+  <li><a href="#primary-care" id="toc-primary-care" class="nav-link" data-scroll-target="#primary-care">Primary care</a></li>
+  <li><a href="#civil-registries" id="toc-civil-registries" class="nav-link" data-scroll-target="#civil-registries">Civil registries</a></li>
+  <li><a href="#public-health-screening" id="toc-public-health-screening" class="nav-link" data-scroll-target="#public-health-screening">Public health / screening</a></li>
+  <li><a href="#community-health-social-care" id="toc-community-health-social-care" class="nav-link" data-scroll-target="#community-health-social-care">Community health / social care</a></li>
+  <li><a href="#secondary-tertiary-care" id="toc-secondary-tertiary-care" class="nav-link" data-scroll-target="#secondary-tertiary-care">Secondary / tertiary care</a></li>
+  <li><a href="#specialist-testing-services" id="toc-specialist-testing-services" class="nav-link" data-scroll-target="#specialist-testing-services">Specialist testing services</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -180,9 +192,144 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Early preview v0.1</strong></p>
+<p>This page contains an overview of different types of source software system, where a patient may have data generated and recorded across their healthcare journey. It is not a description of exact systems that exist in different locations, but rather a general classification of systems based on the different types of data that they contain.</p>
+<section id="patient-administration" class="level3">
+<h3 class="anchored" data-anchor-id="patient-administration">Patient administration</h3>
+<p><img src="sources/pas.jpg" alt="PAS" title="" height="50"></p>
+<section id="patient-administration-systems-pas" class="level4">
+<h4 class="anchored" data-anchor-id="patient-administration-systems-pas">Patient administration systems (PAS)</h4>
+<p>Software that capture non-clinical information about patients, and their activity across different care settings (including all hospitals). Information captured includes identities, demographics, and address, and also captures pathway information such as referrals, waiting lists and appointments, as well as inpatient activity and ward movements or discharge. PAS may be standalone software solutions offered by different suppliers, or may be integrated as a function into Electronic Health Records (EHR) software. PAS also serves as a master patient index for other records in the care location. PAS are joined directly to the national <a href="https://digital.nhs.uk/services/personal-demographics-service">Personal Demographics Service</a>, which is a live, national directory of non-clinical information for patients that is part of the NHS Spine.</p>
+</section>
+</section>
+<section id="primary-care" class="level3">
+<h3 class="anchored" data-anchor-id="primary-care">Primary care</h3>
+<p><img src="sources/primarycare.jpg" alt="Primary care" title="" height="50"></p>
+<section id="patient-demographic-record" class="level4">
+<h4 class="anchored" data-anchor-id="patient-demographic-record">Patient demographic record</h4>
+<p>Much like PAS systems, these are parts of a GP Electronic Health Record (EHR) that maintain a record of non-clinical information for patients, including their GP registration history. Patient details across different GP systems are coordinated through a <a href="https://digital.nhs.uk/services/primary-care-registration-management">Primary Care Registration Management service</a> and also synced with the <a href="https://digital.nhs.uk/services/personal-demographics-service">Personal Demographics Service</a>. Data may be stored in structured tables containing patient identify, demographic, address, and registration information.</p>
+</section>
+<section id="structured-coded-clinical-record" class="level4">
+<h4 class="anchored" data-anchor-id="structured-coded-clinical-record">Structured (coded) clinical record</h4>
+<p>When patients see a clinician, or undergo procedures and tests, or experience medical diagnoses, symptoms, and events, these data are entered into the record as ‘clinical codes’. Coding is performed manually, largely by GPs during or following consultations, or after reviewing letters and results. There are hundreds of thousands of codes that each represent unique clinical concepts, and large vocabularies or dictionaries that define these. The most commonly used for primary care in the NHS is <a href="https://www.england.nhs.uk/digitaltechnology/digital-primary-care/snomed-ct/">SNOMED CT</a>. Codes are typically stored in tables. A simple example of part of such a table is below:</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 11%">
+<col style="width: 55%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>PATIENT_ID</th>
+<th>DATE</th>
+<th>CONCEPT_NAME</th>
+<th>CONCEPT_CODE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>123456789</td>
+<td>2020-1-1</td>
+<td>Pre-diabetes (disorder)</td>
+<td>858301000000107</td>
+</tr>
+<tr class="even">
+<td>123456789</td>
+<td>2021-1-1</td>
+<td>Diabetes mellitus type 2 (disorder)</td>
+<td>44054006</td>
+</tr>
+<tr class="odd">
+<td>123456789</td>
+<td>2024-1-1</td>
+<td>Retinopathy due to diabetes mellitus (disorder)</td>
+<td>4855003</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lab-tests-and-other-measurements" class="level4">
+<h4 class="anchored" data-anchor-id="lab-tests-and-other-measurements">Lab tests and other measurements</h4>
+<p>Results from tests and other measurements can be entered into the record by clinicians, and are usually stored as separate tables that also capture result values and outcomes. In many cases, where tests originated in primary care and where there is interoperability between pathology services and the EHR, these values are automatically sent into the system once results are ready.</p>
+</section>
+<section id="medications-and-prescribing-data" class="level4">
+<h4 class="anchored" data-anchor-id="medications-and-prescribing-data">Medications and prescribing data</h4>
+<p>When a prescription for a medication is generated, either one off or as a repeat prescription, this information is recorded in the GP EHR. This information is directly used to <a href="https://digital.nhs.uk/services/electronic-prescription-service">send prescriptions</a> to a dispenser (like a local pharmacy), as well as populating the patient’s <a href="https://digital.nhs.uk/services/summary-care-records-scr">Summary Care Record</a> with their current medications. The GP EHR also contains records of requests - such as when a patient asks for a prescription to be renewed.</p>
+</section>
+<section id="unstructured-free-text-clinical-record" class="level4">
+<h4 class="anchored" data-anchor-id="unstructured-free-text-clinical-record">Unstructured (free text) clinical record</h4>
+<p>While GPs make effort to code important information about their patients, a large amount of additional information is found in the unstructured, or free text, record. This simply includes blocks of text that are written to describe encounters and other interactions. As part of the medicolegal record, such text typically contains patients’ descriptions of their medical history, symptoms, and other experiences, as well as examination findings and clinical thought process.</p>
+</section>
+<section id="referrals-data" class="level4">
+<h4 class="anchored" data-anchor-id="referrals-data">Referrals data</h4>
+<p>Primary care referrals to other services are increasingly centralised through the national <a href="https://digital.nhs.uk/services/e-referral-service">e-Referral service</a>, and provide an electronic source of referral data. Some referral pathways remain paper based, but can be used to support statistical reporting through aggregation of referral and waiting list data by referral centres such as hospitals.</p>
+</section>
+<section id="community-pharmacy" class="level4">
+<h4 class="anchored" data-anchor-id="community-pharmacy">Community pharmacy</h4>
+<p>Most prescriptions are dispensed to patients through designated local pharmacies. <a href="https://digital.nhs.uk/services/electronic-prescription-service">While the electronic prescription service</a> produces an electronic record of prescribed items that can be used for reimbursements, a minority of prescription and dispensing data are still conducted through paper based records.</p>
+</section>
+</section>
+<section id="civil-registries" class="level3">
+<h3 class="anchored" data-anchor-id="civil-registries">Civil registries</h3>
+<p><img src="sources/civilregistry.jpg" alt="Primary care" title="" height="50"></p>
+<section id="births-and-deaths" class="level4">
+<h4 class="anchored" data-anchor-id="births-and-deaths">Births and deaths</h4>
+<p>Births and deaths are reported through established systems of forms and submissions to the level of registration districts. Records here are collated upwards to the General Register Office who hold national records for births and deaths, as well as marriages and civil partnerships.</p>
+</section>
+</section>
+<section id="public-health-screening" class="level3">
+<h3 class="anchored" data-anchor-id="public-health-screening">Public health / screening</h3>
+<p><img src="sources/popscreening.jpg" alt="Primary care" title="" height="50"></p>
+</section>
+<section id="community-health-social-care" class="level3">
+<h3 class="anchored" data-anchor-id="community-health-social-care">Community health / social care</h3>
+<p><img src="sources/commhealth.jpg" alt="Primary care" title="" height="50"></p>
+</section>
+<section id="secondary-tertiary-care" class="level3">
+<h3 class="anchored" data-anchor-id="secondary-tertiary-care">Secondary / tertiary care</h3>
+<p><img src="sources/secondarycare.jpg" alt="Primary care" title="" height="50"></p>
+<section id="structured-coded-clinical-record-1" class="level4">
+<h4 class="anchored" data-anchor-id="structured-coded-clinical-record-1">Structured (coded) clinical record</h4>
+<p>Data that is coded at point of care is less common in secondary care when compared to primary care, but some Electronic Health Record (EHR) systems such as Epic enable the entry of standard codes such as SNOMED CT into a patient’s record. More commonly, data may be “semi-structured” through forms or flowsheets, where records are made with specific fields (such as “medical history”, “recorded symptoms”, and “examination findings”).</p>
+</section>
+<section id="unstructured-free-text-clinical-record-1" class="level4">
+<h4 class="anchored" data-anchor-id="unstructured-free-text-clinical-record-1">Unstructured (free text) clinical record</h4>
+<p>The vast majority of patient data in secondary care is found as free text. This includes narrative that records the details of encounters between clinicians and patients (from admission to ward rounds and discharge), as well as records of procedures and operations, nursing and allied health professinoal notes, and clinical thought processes (for example from a multi-disciplinary meeting). This also includes discharge summaries, clinical letters, and longer reports of investigations such as imaging or pathology.</p>
+</section>
+<section id="lab-tests-and-other-measurements-1" class="level4">
+<h4 class="anchored" data-anchor-id="lab-tests-and-other-measurements-1">Lab tests and other measurements</h4>
+</section>
+<section id="secondary-care-medication-and-dispensing-data" class="level4">
+<h4 class="anchored" data-anchor-id="secondary-care-medication-and-dispensing-data">Secondary care medication and dispensing data</h4>
+</section>
+<section id="radiology-dicom" class="level4">
+<h4 class="anchored" data-anchor-id="radiology-dicom">Radiology / DICOM</h4>
+</section>
+<section id="histopathology-slides" class="level4">
+<h4 class="anchored" data-anchor-id="histopathology-slides">Histopathology slides</h4>
+</section>
+<section id="medical-device-outputs" class="level4">
+<h4 class="anchored" data-anchor-id="medical-device-outputs">Medical device outputs</h4>
+</section>
+<section id="other-imaging-modalities" class="level4">
+<h4 class="anchored" data-anchor-id="other-imaging-modalities">Other imaging modalities</h4>
+</section>
+<section id="genomic-testing-reports" class="level4">
+<h4 class="anchored" data-anchor-id="genomic-testing-reports">Genomic testing reports</h4>
+</section>
+<section id="cancer-data" class="level4">
+<h4 class="anchored" data-anchor-id="cancer-data">Cancer data</h4>
+</section>
+<section id="referrals-and-waiting-times-data" class="level4">
+<h4 class="anchored" data-anchor-id="referrals-and-waiting-times-data">Referrals and waiting times data</h4>
+</section>
+</section>
+<section id="specialist-testing-services" class="level3">
+<h3 class="anchored" data-anchor-id="specialist-testing-services">Specialist testing services</h3>
+<p><img src="sources/genomic.jpg" alt="Primary care" title="" height="50"></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

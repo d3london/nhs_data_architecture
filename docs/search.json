@@ -4,7 +4,7 @@
     "href": "national/sources.html",
     "title": "Summary of Data Sources",
     "section": "",
-    "text": "Early preview v0.1",
+    "text": "This page contains an overview of different types of source software system, where a patient may have data generated and recorded across their healthcare journey. It is not a description of exact systems that exist in different locations, but rather a general classification of systems based on the different types of data that they contain.\n\nPatient administration\n\n\nPatient administration systems (PAS)\nSoftware that capture non-clinical information about patients, and their activity across different care settings (including all hospitals). Information captured includes identities, demographics, and address, and also captures pathway information such as referrals, waiting lists and appointments, as well as inpatient activity and ward movements or discharge. PAS may be standalone software solutions offered by different suppliers, or may be integrated as a function into Electronic Health Records (EHR) software. PAS also serves as a master patient index for other records in the care location. PAS are joined directly to the national Personal Demographics Service, which is a live, national directory of non-clinical information for patients that is part of the NHS Spine.\n\n\n\nPrimary care\n\n\nPatient demographic record\nMuch like PAS systems, these are parts of a GP Electronic Health Record (EHR) that maintain a record of non-clinical information for patients, including their GP registration history. Patient details across different GP systems are coordinated through a Primary Care Registration Management service and also synced with the Personal Demographics Service. Data may be stored in structured tables containing patient identify, demographic, address, and registration information.\n\n\nStructured (coded) clinical record\nWhen patients see a clinician, or undergo procedures and tests, or experience medical diagnoses, symptoms, and events, these data are entered into the record as ‘clinical codes’. Coding is performed manually, largely by GPs during or following consultations, or after reviewing letters and results. There are hundreds of thousands of codes that each represent unique clinical concepts, and large vocabularies or dictionaries that define these. The most commonly used for primary care in the NHS is SNOMED CT. Codes are typically stored in tables. A simple example of part of such a table is below:\n\n\n\n\n\n\n\n\n\nPATIENT_ID\nDATE\nCONCEPT_NAME\nCONCEPT_CODE\n\n\n\n\n123456789\n2020-1-1\nPre-diabetes (disorder)\n858301000000107\n\n\n123456789\n2021-1-1\nDiabetes mellitus type 2 (disorder)\n44054006\n\n\n123456789\n2024-1-1\nRetinopathy due to diabetes mellitus (disorder)\n4855003\n\n\n\n\n\nLab tests and other measurements\nResults from tests and other measurements can be entered into the record by clinicians, and are usually stored as separate tables that also capture result values and outcomes. In many cases, where tests originated in primary care and where there is interoperability between pathology services and the EHR, these values are automatically sent into the system once results are ready.\n\n\nMedications and prescribing data\nWhen a prescription for a medication is generated, either one off or as a repeat prescription, this information is recorded in the GP EHR. This information is directly used to send prescriptions to a dispenser (like a local pharmacy), as well as populating the patient’s Summary Care Record with their current medications. The GP EHR also contains records of requests - such as when a patient asks for a prescription to be renewed.\n\n\nUnstructured (free text) clinical record\nWhile GPs make effort to code important information about their patients, a large amount of additional information is found in the unstructured, or free text, record. This simply includes blocks of text that are written to describe encounters and other interactions. As part of the medicolegal record, such text typically contains patients’ descriptions of their medical history, symptoms, and other experiences, as well as examination findings and clinical thought process.\n\n\nReferrals data\nPrimary care referrals to other services are increasingly centralised through the national e-Referral service, and provide an electronic source of referral data. Some referral pathways remain paper based, but can be used to support statistical reporting through aggregation of referral and waiting list data by referral centres such as hospitals.\n\n\nCommunity pharmacy\nMost prescriptions are dispensed to patients through designated local pharmacies. While the electronic prescription service produces an electronic record of prescribed items that can be used for reimbursements, a minority of prescription and dispensing data are still conducted through paper based records.\n\n\n\nCivil registries\n\n\nBirths and deaths\nBirths and deaths are reported through established systems of forms and submissions to the level of registration districts. Records here are collated upwards to the General Register Office who hold national records for births and deaths, as well as marriages and civil partnerships.\n\n\n\nPublic health / screening\n\n\n\nCommunity health / social care\n\n\n\nSecondary / tertiary care\n\n\nStructured (coded) clinical record\nData that is coded at point of care is less common in secondary care when compared to primary care, but some Electronic Health Record (EHR) systems such as Epic enable the entry of standard codes such as SNOMED CT into a patient’s record. More commonly, data may be “semi-structured” through forms or flowsheets, where records are made with specific fields (such as “medical history”, “recorded symptoms”, and “examination findings”).\n\n\nUnstructured (free text) clinical record\nThe vast majority of patient data in secondary care is found as free text. This includes narrative that records the details of encounters between clinicians and patients (from admission to ward rounds and discharge), as well as records of procedures and operations, nursing and allied health professinoal notes, and clinical thought processes (for example from a multi-disciplinary meeting). This also includes discharge summaries, clinical letters, and longer reports of investigations such as imaging or pathology.\n\n\nLab tests and other measurements\n\n\nSecondary care medication and dispensing data\n\n\nRadiology / DICOM\n\n\nHistopathology slides\n\n\nMedical device outputs\n\n\nOther imaging modalities\n\n\nGenomic testing reports\n\n\nCancer data\n\n\nReferrals and waiting times data\n\n\n\nSpecialist testing services",
     "crumbs": [
       "NATIONAL",
       "Data Sources"
@@ -16,6 +16,28 @@
     "title": "Summary of Data Flows",
     "section": "",
     "text": "Early preview v0.1",
+    "crumbs": [
+      "NATIONAL",
+      "Data Flows"
+    ]
+  },
+  {
+    "objectID": "national/flows.html#direct-care",
+    "href": "national/flows.html#direct-care",
+    "title": "Summary of Data Flows",
+    "section": "Direct Care",
+    "text": "Direct Care\n\nNHS Spine\n\n\nShared Care Records\n\n\nNHS App",
+    "crumbs": [
+      "NATIONAL",
+      "Data Flows"
+    ]
+  },
+  {
+    "objectID": "national/flows.html#other-uses",
+    "href": "national/flows.html#other-uses",
+    "title": "Summary of Data Flows",
+    "section": "Other Uses",
+    "text": "Other Uses\n\nNHS GP extractions\n\n\nOther GP extractions\n\n\nBirths & Deaths\n\n\nNHS Digital submissions\n\n\nNational Disease Registration Service\n\n\nNHS Digitrials",
     "crumbs": [
       "NATIONAL",
       "Data Flows"
@@ -35,12 +57,12 @@
   {
     "objectID": "national/main.html",
     "href": "national/main.html",
-    "title": "National Schematics",
+    "title": "National Schematic",
     "section": "",
     "text": "Early preview v0.1\nThe diagram below illustrates data flows that meet the following criteria.\n\nOn a national scale (spanning all NHS regions)\nOccur electronically (data is managed electronically and systematically collected via API)\nManaged systematically (the same documented process is reproduced across all extractions and transfers).\n\nEach category of data flows can be toggled. These, and source systems, are described in subsections. The diagram may take 30 seconds to load. Best viewed in desktop/laptop computer web browser, and in full screen.",
     "crumbs": [
       "NATIONAL",
-      "National Schematics"
+      "National Schematic"
     ]
   }
 ]

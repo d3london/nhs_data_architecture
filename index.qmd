@@ -2,7 +2,7 @@
 title: "Introduction"
 ---
 
-__Early preview v0.1__
+#### Early preview v0.1
 
 Deep dive into health data architecture, data flows, and data capabilities across NHS England, through detailed schematics and explainers. This is an early proof of concept and a 'living document' that will be continually updated. Work is offered open source, under [MIT license](https://opensource.org/license/mit). Source files found in the [Github repository](https://github.com/d3london/nhs_data_architecture). Feedback and collaboration are invited.
 

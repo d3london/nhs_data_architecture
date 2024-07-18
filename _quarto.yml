@@ -17,7 +17,7 @@ website:
         - section: "NATIONAL"
           contents: 
             - href: national/main.qmd
-              text: National Schematics
+              text: National Schematic
             - href: national/sources.qmd
               text: Data Sources
             - href: national/flows.qmd
