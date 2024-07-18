@@ -1,5 +1,5 @@
 ---
-title: "Data sources"
+title: "Summary of Data Sources"
 ---
 
 __Early preview v0.1__

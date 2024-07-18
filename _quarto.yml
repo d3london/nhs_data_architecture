@@ -10,18 +10,18 @@ website:
     style: "docked"
     search: false
     contents:
-        - section: "MAIN"
+        - section: "OVERVIEW"
           contents: 
             - href: index.qmd
               text: Introduction       
         - section: "NATIONAL"
           contents: 
             - href: national/main.qmd
-              text: National schematic
+              text: National Schematics
             - href: national/sources.qmd
-              text: Data sources
+              text: Data Sources
             - href: national/flows.qmd
-              text: Data flow categories
+              text: Data Flows
 format:
   html:
     theme: zephyr

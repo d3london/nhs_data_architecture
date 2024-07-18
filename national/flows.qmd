@@ -1,5 +1,5 @@
 ---
-title: "Data flows"
+title: "Summary of Data Flows"
 ---
 
 __Early preview v0.1__

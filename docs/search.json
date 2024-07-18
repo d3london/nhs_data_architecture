@@ -2,23 +2,23 @@
   {
     "objectID": "national/sources.html",
     "href": "national/sources.html",
-    "title": "Data sources",
+    "title": "Summary of Data Sources",
     "section": "",
     "text": "Early preview v0.1",
     "crumbs": [
       "NATIONAL",
-      "Data sources"
+      "Data Sources"
     ]
   },
   {
     "objectID": "national/flows.html",
     "href": "national/flows.html",
-    "title": "Data flows",
+    "title": "Summary of Data Flows",
     "section": "",
     "text": "Early preview v0.1",
     "crumbs": [
       "NATIONAL",
-      "Data flow categories"
+      "Data Flows"
     ]
   },
   {
@@ -26,21 +26,21 @@
     "href": "index.html",
     "title": "Introduction",
     "section": "",
-    "text": "Early preview v0.1\nDeep dive into health data architecture, data flows, and data capabilities across NHS England, through detailed schematics and explainers.\nThis is a early proof of concept and a ‘living document’ that we are continually adding to. Feedback and collaboration are invited.\nPrevious version in Zhang, Morley et al., 2023",
+    "text": "Early preview v0.1\nDeep dive into health data architecture, data flows, and data capabilities across NHS England, through detailed schematics and explainers. This is an early proof of concept and a ‘living document’ that will be continually updated. Work is offered open source, under MIT license. Source files found in the Github repository. Feedback and collaboration are invited.\nPrevious work in mapping data flows found in Zhang, Morley et al., 2023 and Data Insights UK. This last work, conducted to support recommendations of Better, Broader, Safer 2022, was focused on high-level but comprehensive understanding of what individual flows existed (est. 60,000 in one year) and who was extracting and using data. The new work, hosted here, is focused on a cross-section of systems, technical architectures, and extraction mechanisms, that are key to informing feasibility and gap anlysis for technical data programmes.",
     "crumbs": [
-      "MAIN",
+      "OVERVIEW",
       "Introduction"
     ]
   },
   {
     "objectID": "national/main.html",
     "href": "national/main.html",
-    "title": "Data architecture and flows: National",
+    "title": "National Schematics",
     "section": "",
-    "text": "Early preview v0.1\nThis diagram illustrates data flows that meet the following criteria:\n\nOn a national scale (spanning all NHS regions)\nOccur electronically (data is managed and transferred via API)\nManaged systematically (the same process is reproduced across all extractions and transfers).\n\nEach category of data flows can be toggled. These, and source systems, are described in subsections. Best viewed in computer web browser, and in full screen.",
+    "text": "Early preview v0.1\nThe diagram below illustrates data flows that meet the following criteria.\n\nOn a national scale (spanning all NHS regions)\nOccur electronically (data is managed electronically and systematically collected via API)\nManaged systematically (the same documented process is reproduced across all extractions and transfers).\n\nEach category of data flows can be toggled. These, and source systems, are described in subsections. The diagram may take 30 seconds to load. Best viewed in desktop/laptop computer web browser, and in full screen.",
     "crumbs": [
       "NATIONAL",
-      "National schematic"
+      "National Schematics"
     ]
   }
 ]
