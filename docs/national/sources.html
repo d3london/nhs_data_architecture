@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NHS Data Architecture &amp; Data Flows - Summary of Data Sources</title>
+<title>Summary of Data Sources – NHS Data Architecture &amp; Data Flows</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,11 +89,11 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../national/main.html">NATIONAL</a></li><li class="breadcrumb-item"><a href="../national/sources.html">Data Sources</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -106,9 +106,9 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">OVERVIEW</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -119,13 +119,19 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">NATIONAL</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -195,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 <p>This page contains an overview of different types of source software system, where a patient may have data generated and recorded across their healthcare journey. It is not a description of exact systems that exist in different locations, but rather a general classification of systems based on the different types of data that they contain.</p>
 <section id="patient-administration" class="level3">
 <h3 class="anchored" data-anchor-id="patient-administration">Patient administration</h3>
-<p><img src="sources/pas.jpg" alt="PAS" title="" height="50"></p>
+<p><img src="sources/pas.jpg" alt="PAS" title="" height="70"></p>
 <section id="patient-administration-systems-pas" class="level4">
 <h4 class="anchored" data-anchor-id="patient-administration-systems-pas">Patient administration systems (PAS)</h4>
 <p>Software that capture non-clinical information about patients, and their activity across different care settings (including all hospitals). Information captured includes identities, demographics, and address, and also captures pathway information such as referrals, waiting lists and appointments, as well as inpatient activity and ward movements or discharge. PAS may be standalone software solutions offered by different suppliers, or may be integrated as a function into Electronic Health Records (EHR) software. PAS also serves as a master patient index for other records in the care location. PAS are joined directly to the national <a href="https://digital.nhs.uk/services/personal-demographics-service">Personal Demographics Service</a>, which is a live, national directory of non-clinical information for patients that is part of the NHS Spine.</p>
@@ -203,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="primary-care" class="level3">
 <h3 class="anchored" data-anchor-id="primary-care">Primary care</h3>
-<p><img src="sources/primarycare.jpg" alt="Primary care" title="" height="50"></p>
+<p><img src="sources/primarycare.jpg" alt="Primary care" title="" height="70"></p>
 <section id="patient-demographic-record" class="level4">
 <h4 class="anchored" data-anchor-id="patient-demographic-record">Patient demographic record</h4>
 <p>Much like PAS systems, these are parts of a GP Electronic Health Record (EHR) that maintain a record of non-clinical information for patients, including their GP registration history. Patient details across different GP systems are coordinated through a <a href="https://digital.nhs.uk/services/primary-care-registration-management">Primary Care Registration Management service</a> and also synced with the <a href="https://digital.nhs.uk/services/personal-demographics-service">Personal Demographics Service</a>. Data may be stored in structured tables containing patient identify, demographic, address, and registration information.</p>
@@ -211,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="structured-coded-clinical-record" class="level4">
 <h4 class="anchored" data-anchor-id="structured-coded-clinical-record">Structured (coded) clinical record</h4>
 <p>When patients see a clinician, or undergo procedures and tests, or experience medical diagnoses, symptoms, and events, these data are entered into the record as ‘clinical codes’. Coding is performed manually, largely by GPs during or following consultations, or after reviewing letters and results. There are hundreds of thousands of codes that each represent unique clinical concepts, and large vocabularies or dictionaries that define these. The most commonly used for primary care in the NHS is <a href="https://www.england.nhs.uk/digitaltechnology/digital-primary-care/snomed-ct/">SNOMED CT</a>. Codes are typically stored in tables. A simple example of part of such a table is below:</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 13%">
 <col style="width: 11%">
@@ -271,7 +277,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="civil-registries" class="level3">
 <h3 class="anchored" data-anchor-id="civil-registries">Civil registries</h3>
-<p><img src="sources/civilregistry.jpg" alt="Primary care" title="" height="50"></p>
+<p><img src="sources/civilregistry.jpg" alt="Primary care" title="" height="70"></p>
 <section id="births-and-deaths" class="level4">
 <h4 class="anchored" data-anchor-id="births-and-deaths">Births and deaths</h4>
 <p>Births and deaths are reported through established systems of forms and submissions to the level of registration districts. Records here are collated upwards to the General Register Office who hold national records for births and deaths, as well as marriages and civil partnerships.</p>
@@ -279,15 +285,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="public-health-screening" class="level3">
 <h3 class="anchored" data-anchor-id="public-health-screening">Public health / screening</h3>
-<p><img src="sources/popscreening.jpg" alt="Primary care" title="" height="50"></p>
+<p><img src="sources/popscreening.jpg" alt="Primary care" title="" height="70"></p>
 </section>
 <section id="community-health-social-care" class="level3">
 <h3 class="anchored" data-anchor-id="community-health-social-care">Community health / social care</h3>
-<p><img src="sources/commhealth.jpg" alt="Primary care" title="" height="50"></p>
+<p><img src="sources/commhealth.jpg" alt="Primary care" title="" height="70"></p>
 </section>
 <section id="secondary-tertiary-care" class="level3">
 <h3 class="anchored" data-anchor-id="secondary-tertiary-care">Secondary / tertiary care</h3>
-<p><img src="sources/secondarycare.jpg" alt="Primary care" title="" height="50"></p>
+<p><img src="sources/secondarycare.jpg" alt="Primary care" title="" height="70"></p>
 <section id="structured-coded-clinical-record-1" class="level4">
 <h4 class="anchored" data-anchor-id="structured-coded-clinical-record-1">Structured (coded) clinical record</h4>
 <p>Data that is coded at point of care is less common in secondary care when compared to primary care, but some Electronic Health Record (EHR) systems such as Epic enable the entry of standard codes such as SNOMED CT into a patient’s record. More commonly, data may be “semi-structured” through forms or flowsheets, where records are made with specific fields (such as “medical history”, “recorded symptoms”, and “examination findings”).</p>
@@ -367,18 +373,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -410,7 +405,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -418,7 +435,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

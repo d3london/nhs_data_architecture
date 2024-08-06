@@ -13,7 +13,9 @@ website:
         - section: "OVERVIEW"
           contents: 
             - href: index.qmd
-              text: Introduction       
+              text: Introduction
+            - href: about.qmd
+              text: About                          
         - section: "NATIONAL"
           contents: 
             - href: national/main.qmd
