@@ -5,13 +5,13 @@ title: "Summary of Data Sources"
 This page contains an overview of different types of source software system, where a patient may have data generated and recorded across their healthcare journey. It is not a description of exact systems that exist in different locations, but rather a general classification of systems based on the different types of data that they contain.
 
 ### Patient administration
-<img src="sources/pas.jpg" alt="PAS" title="" height="50" />
+<img src="sources/pas.jpg" alt="PAS" title="" height="70" />
 
 #### Patient administration systems (PAS)
 Software that capture non-clinical information about patients, and their activity across different care settings (including all hospitals). Information captured includes identities, demographics, and address, and also captures pathway information such as referrals, waiting lists and appointments, as well as inpatient activity and ward movements or discharge. PAS may be standalone software solutions offered by different suppliers, or may be integrated as a function into Electronic Health Records (EHR) software. PAS also serves as a master patient index for other records in the care location. PAS are joined directly to the national [Personal Demographics Service](https://digital.nhs.uk/services/personal-demographics-service), which is a live, national directory of non-clinical information for patients that is part of the NHS Spine.
 
 ### Primary care
-<img src="sources/primarycare.jpg" alt="Primary care" title="" height="50" />
+<img src="sources/primarycare.jpg" alt="Primary care" title="" height="70" />
 
 #### Patient demographic record
 Much like PAS systems, these are parts of a GP Electronic Health Record (EHR) that maintain a record of non-clinical information for patients, including their GP registration history. Patient details across different GP systems are coordinated through a [Primary Care Registration Management service](https://digital.nhs.uk/services/primary-care-registration-management) and also synced with the [Personal Demographics Service](https://digital.nhs.uk/services/personal-demographics-service). Data may be stored in structured tables containing patient identify, demographic, address, and registration information.
@@ -41,19 +41,19 @@ Primary care referrals to other services are increasingly centralised through th
 Most prescriptions are dispensed to patients through designated local pharmacies. [While the electronic prescription service](https://digital.nhs.uk/services/electronic-prescription-service) produces an electronic record of prescribed items that can be used for reimbursements, a minority of prescription and dispensing data are still conducted through paper based records. 
 
 ### Civil registries
-<img src="sources/civilregistry.jpg" alt="Primary care" title="" height="50" />
+<img src="sources/civilregistry.jpg" alt="Primary care" title="" height="70" />
 
 #### Births and deaths
 Births and deaths are reported through established systems of forms and submissions to the level of registration districts. Records here are collated upwards to the General Register Office who hold national records for births and deaths, as well as marriages and civil partnerships.
 
 ### Public health / screening
-<img src="sources/popscreening.jpg" alt="Primary care" title="" height="50" /> 
+<img src="sources/popscreening.jpg" alt="Primary care" title="" height="70" /> 
 
 ### Community health / social care
-<img src="sources/commhealth.jpg" alt="Primary care" title="" height="50" /> 
+<img src="sources/commhealth.jpg" alt="Primary care" title="" height="70" /> 
 
 ### Secondary / tertiary care
-<img src="sources/secondarycare.jpg" alt="Primary care" title="" height="50" /> 
+<img src="sources/secondarycare.jpg" alt="Primary care" title="" height="70" /> 
 
 #### Structured (coded) clinical record
 Data that is coded at point of care is less common in secondary care when compared to primary care, but some Electronic Health Record (EHR) systems such as Epic enable the entry of standard codes such as SNOMED CT into a patient's record. More commonly, data may be "semi-structured" through forms or flowsheets, where records are made with specific fields (such as "medical history", "recorded symptoms", and "examination findings").
