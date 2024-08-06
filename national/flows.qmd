@@ -2,26 +2,26 @@
 title: "Summary of Data Flows"
 ---
 
-__Early preview v0.1__
+_Early preview v0.1_
 
-## Direct Care
+### Direct Care
 
-### NHS Spine
+#### NHS Spine
 
-### Shared Care Records
+#### Shared Care Records
 
-### NHS App
+#### NHS App
 
-## Other Uses
+### Other Uses
 
-### NHS GP extractions
+#### NHS GP extractions
 
-### Other GP extractions
+#### Other GP extractions
 
-### Births & Deaths
+#### Births & Deaths
 
-### NHS Digital submissions
+#### NHS Digital submissions
 
-### National Disease Registration Service
+#### National Disease Registration Service
 
-### NHS Digitrials
+#### NHS Digitrials

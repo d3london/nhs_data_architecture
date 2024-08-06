@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-#### Early preview v0.1
+_Early preview v0.1_
 
 A deep dive into health data architecture, data flows, and data capabilities across NHS England, through understandable schematics and explainers.
 
