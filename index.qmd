@@ -5,13 +5,10 @@ format:
     page-layout: full
 ---
 
-_Early preview v0.1_
-
 A deep dive into health data architecture, data flows, and data capabilities across NHS England, through understandable schematics and explainers.
 
-This is an early proof of concept and a 'living document' that will be continually updated. We are reaching out to the wider community for collaboration and contribution. All work and data are under [MIT license](https://opensource.org/license/mit). Source files (main schematic built in draw.io) found in the [Github repository](https://github.com/d3london/nhs_data_architecture).
+We are reaching out to the wider community for collaboration and contribution through [this form](https://forms.office.com/e/GjThQRhuSg). For now, this is an early proof of concept and a 'living document' that will be continually updated. All work provided as open source under [MIT license](https://opensource.org/license/mit). Source files (main schematic built in draw.io) found in the [Github repository](https://github.com/d3london/nhs_data_architecture).
 
-Previous work in mapping data flows found in [Zhang, Morley et al., 2023](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00157-7/fulltext) and [Data Insights UK](https://datainsights.uk). This last work, conducted to support recommendations of [Better, Broader, Safer 2022](https://www.gov.uk/government/publications/better-broader-safer-using-health-data-for-research-and-analysis), was focused on high-level but comprehensive understanding of what individual flows existed (est. 60,000 in one year) and who was extracting and using data. The new work is focused on a cross-section of systems, technical architectures, and extraction mechanisms, that are key to informing feasibility and gap analysis for technical data programmes.      
+Previous work in mapping data flows found in [Zhang, Morley et al., 2023](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00157-7/fulltext) and [Data Insights UK](https://datainsights.uk). This last work, conducted to support recommendations of [Better, Broader, Safer 2022](https://www.gov.uk/government/publications/better-broader-safer-using-health-data-for-research-and-analysis), was focused on high-level but comprehensive understanding of what individual flows existed (est. 60,000 in one year) and who was extracting and using data. The new work provides a different view of the landscape, by focusing on systems and technical architectures, that are key to informing feasibility and gap analysis for technical data programmes.
 
 ![Figure of Data flows from Zhang, Morley et al., 2023](https://www.thelancet.com/cms/attachment/1d2d7c63-88db-46ed-92bb-d3a917918f42/gr2.jpg)
-![Figure of Data extractions from Zhang, Morley et al., 2023](https://www.thelancet.com/cms/attachment/e4d7c4dd-5653-4740-b31a-a0cf7469ee43/gr4.jpg)
