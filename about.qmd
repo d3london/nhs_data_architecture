@@ -5,9 +5,7 @@ format:
     page-layout: full
 ---
 
-The NHS hosts some of the most valuable data in the world: a digitised, longitudinal record, across entire care pathways, for an incredibly diverse population. And yet, the question of how to fulfil this value remains an open one. 
-
-We [previously showed](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00157-7/fulltext) that despite high volumes of data flows, there were multiple issues across national data infrastructure:
+The NHS hosts some of the most valuable data in the world: a digitised, longitudinal record, across entire care pathways, for an incredibly diverse population. And yet, the question of how to fulfil this value remains an open one. We [previously showed](https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00157-7/fulltext) that despite high volumes of data flows, there were multiple issues across national data infrastructure:
 
 1. A large amount of our data remains 'untapped', trapped behind proprietary electronic health record systems and archaic document formats. New research infrastructure has often reshuffled the same data that's been around for decades into new environments;
 2. The NHS is not achieving value from its own data. Rather, value (often monetary) is being generated once data had left NHS firewalls;
@@ -24,10 +22,11 @@ Here's what we want to focus on over the next few months:
 3. Describing the different NHS APIs
 4. Describing NHS data quality, and fitness for different purposes
 5. Describing specific data systems, and characterising their ease of data access
+6. Describing laws and processes around information governance, data access, and research approval 
 
 #### Collaborating
 
-As of August 2024, the information hosted on this website are still basic and incomplete. We are reaching out to the community to feed back and help make this resource better. Please get in touch through: ____
+As of August 2024, the information hosted on this website are still basic and incomplete. We are reaching out to the community to feed back and help make this resource better. Please get in touch through [this form](https://forms.office.com/e/GjThQRhuSg).
 
 - [Dr. Joe Zhang](https://www.linkedin.com/in/drjzhang/)
 - [Dr. Jess Morley](https://www.linkedin.com/in/jessicarosemorley/)
