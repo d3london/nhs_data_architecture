@@ -15,7 +15,7 @@
     "href": "national/main.html",
     "title": "National Schematic",
     "section": "",
-    "text": "Early preview v0.1\nThe schematic below illustrates high-level architecture and data flows that meet the following criteria:\n\nOn a national scale (spanning all NHS regions);\nOccur electronically (data is managed electronically and systematically collected via API);\nManaged systematically (the same documented process is reproduced across all extractions and transfers).\n\nEach category of data flows below can be toggled. The diagram may take 30 seconds to load. Best viewed in desktop/laptop computer web browser, and in full screen.\n\n\n\nVersion history\nversion 0.1 24-08-08: first version of national schematic",
+    "text": "Early preview v0.1\nThe schematic below illustrates high-level architecture and data flows that meet the following criteria:\n\nOn a national scale (spanning all NHS regions);\nOccur electronically (data is managed electronically and systematically collected via API);\nManaged systematically (the same documented process is reproduced across all extractions and transfers).\n\nDatabases are linked to external information webpages. Each category of data flows below can be toggled on the left of the schematic. Best viewed in desktop/laptop web browser, and by pressing the ‘Fullscreen’ button in the toolbar. The diagram may take up to 10 seconds to load.\n\n\nversion 0.1 24-08-08: first version of national schematic",
     "crumbs": [
       "NATIONAL",
       "National Schematic"
