@@ -4,11 +4,13 @@ title: "Summary of Data Flows"
 
 _Early preview v0.1_
 
-This page contains an overview of the broad classifications of data flow from the main schematic. At present, national data architectures make a clear division between data for direct care (top half of schematic) and other secondary uses (bottom half of schematic).
+This page contains an overview of the broad classifications of data flow from the main schematic. At present, there is clear division in architecture that supports direct care (top half of schematic) and architecture that supports other secondary uses (bottom half of schematic).
 
-### Direct Care
+### Direct care
 
 #### NHS Spine
+
+<img src="fig/flows_spine.png" title="" height="180" />
 
 The [NHS Spine](https://digital.nhs.uk/services/spine) pulls in core clinical data from various NHS systems, including GP practices, hospitals, and other care settings, to provide a national source of truth for the most vital patient information. Components include: 
 
@@ -18,13 +20,17 @@ The [NHS Spine](https://digital.nhs.uk/services/spine) pulls in core clinical da
 
 #### Shared care records
 
+<img src="fig/flows_scr.png" title="" height="100" />
+
 Shared Care Records (or Health Information Exchange (HIE)) integrates patient data from multiple care settings within a local health and care system. Data is typically shared between GP practices, hospitals, community services, mental health providers, and social care. This can include demographic information, diagnoses, medications, care plans, and recent encounters. The purpose is to provide a more comprehensive view of a patient's health and care history to support care delivery occurring across multiple physical locations. A fuller view of how Shared Care Records have evolved in the NHS can be found [here](https://www.nature.com/articles/s41746-023-00891-y).  
 
 #### NHS App
 
+<img src="fig/flows_app.png" title="" height="120" />
+
 The [NHS App](https://digital.nhs.uk/services/nhs-app/nhs-app-features) serves as a patient-facing portal that both various types of data, and provides services directly to patients. It interfaces with GP systems to allow patients to book appointments and order repeat prescriptions. It also pulls in data from GP systems and the NHS Spine to enable patients to view their medical records. Additionally, it may integrate with referral systems to enable patients to view their hospital referral and appointment statuses, and average waiting times.
 
-### Other Uses
+### Other secondary uses
 
 #### GP data (NHS and other) extractions
 
@@ -41,10 +47,6 @@ Secondary care data related to patient attendances, diagnoses, and procedures,  
 #### National Disease Registration Service
 
 The [National Disease Registration Service (NDRS)](https://digital.nhs.uk/ndrs/) collects data on specific diseases and conditions, primarily cancer and rare diseases. Data is collected in hospitals through a mixture of manual abstraction and coding (typically by cancer audit teams), or by automated extraction from EHR systems (such as chemotherapy prescribing systems). The resulting datasets include the [Cancer Outcomes and Services Dataset (COSD)](https://digital.nhs.uk/ndrs/data/data-sets/cosd), and the [Systemic Anti-Cancer Therapies dataset (SACT)](https://digital.nhs.uk/ndrs/data/data-sets/sact). Data is used for audit purposes, but also as a research and analytics resource, by being made available through the [Data Access Request Service (DARS)](https://digital.nhs.uk/services/data-access-request-service-dars). 
-
-#### NHS Digitrials
-
-This is a [national platform](https://digital.nhs.uk/services/nhs-digitrials) that allows organisations conducting clinical trials to discover and recruit patients that fit research inclusion criteria. Such criteria usually includes demographic information, as well as data about diagnoses and medications. The Digitrials platform is able to pull data from the Personal Demographics Service, as well as access hospital diagnosis data (via Hospital Episode Statistics), and medication dispensing data.
 
 ### Version history
 
