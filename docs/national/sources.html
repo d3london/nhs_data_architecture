@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#patient-administration" id="toc-patient-administration" class="nav-link active" data-scroll-target="#patient-administration">Patient administration</a></li>
   <li><a href="#primary-care" id="toc-primary-care" class="nav-link" data-scroll-target="#primary-care">Primary care</a></li>
   <li><a href="#secondary-tertiary-care" id="toc-secondary-tertiary-care" class="nav-link" data-scroll-target="#secondary-tertiary-care">Secondary / tertiary care</a></li>
-  <li><a href="#specialist-testing-services" id="toc-specialist-testing-services" class="nav-link" data-scroll-target="#specialist-testing-services">Specialist testing services</a></li>
+  <li><a href="#specialist-testing" id="toc-specialist-testing" class="nav-link" data-scroll-target="#specialist-testing">Specialist testing</a></li>
   <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
   </ul>
 </nav>
@@ -200,21 +200,22 @@ ul.task-list li input[type="checkbox"] {
 <p>This page contains an overview of different types of software systems, or modules within systems, where a patient may have data generated and recorded across their healthcare journey. These are not descriptions of specific software, but rather a <strong>general classification based on the different types of data that are generated.</strong></p>
 <section id="patient-administration" class="level3">
 <h3 class="anchored" data-anchor-id="patient-administration">Patient administration</h3>
-<p><img src="sources/pas.jpg" alt="PAS" title="" height="50"></p>
 <section id="patient-administration-systems-pas" class="level4">
 <h4 class="anchored" data-anchor-id="patient-administration-systems-pas">Patient administration systems (PAS)</h4>
+<p><img src="../diagrams/sources/source_pas.png" title="" height="70"></p>
 <p>Software that capture non-clinical information about patients, and their activity across different care settings (including all hospitals). Information captured includes identities, demographics, and address, and also captures pathway information such as referrals, waiting lists and appointments, as well as inpatient activity and ward movements or discharge. PAS may be standalone software solutions offered by different suppliers, or may be integrated as a function into Electronic Health Records (EHR) software. PAS also serves as a master patient index for other records in the care location. PAS are joined directly to the national <a href="https://digital.nhs.uk/services/personal-demographics-service">Personal Demographics Service</a>, which is a live, national directory of non-clinical information for patients that is part of the NHS Spine.</p>
 </section>
 </section>
 <section id="primary-care" class="level3">
 <h3 class="anchored" data-anchor-id="primary-care">Primary care</h3>
-<p><img src="sources/primarycare.jpg" alt="Primary care" title="" height="50"></p>
-<section id="patient-demographic-record" class="level4">
-<h4 class="anchored" data-anchor-id="patient-demographic-record">Patient demographic record</h4>
+<section id="gp-software-demographic-record" class="level4">
+<h4 class="anchored" data-anchor-id="gp-software-demographic-record">GP software demographic record</h4>
+<p><img src="../diagrams/sources/source_gp_demog.png" title="" height="70"></p>
 <p>Much like PAS systems, these are parts of a GP Electronic Health Record (EHR) software that maintain a record of non-clinical information for patients, including their GP registration history. Patient details across different GP systems are coordinated through a <a href="https://digital.nhs.uk/services/primary-care-registration-management">Primary Care Registration Management service</a> and also synced with the <a href="https://digital.nhs.uk/services/personal-demographics-service">Personal Demographics Service</a>. Data may be accessible to analysts via data tables containing patient identifiers, demographic, address, and registration information.</p>
 </section>
-<section id="structured-coded-clinical-record" class="level4">
-<h4 class="anchored" data-anchor-id="structured-coded-clinical-record">Structured (coded) clinical record</h4>
+<section id="gp-software-coded-clinical-record" class="level4">
+<h4 class="anchored" data-anchor-id="gp-software-coded-clinical-record">GP software coded clinical record</h4>
+<p><img src="../diagrams/sources/source_gp_codes.png" title="" height="70"></p>
 <p>When patients see a clinician, or undergo procedures and tests, or experience medical diagnoses, symptoms, and events, these data are entered into the record as ‘clinical codes’. Coding is performed manually, largely by GPs during or following consultations, or after reviewing letters and results. There are hundreds of thousands of codes that represent unique clinical concepts, and large vocabularies or dictionaries that define these. The most commonly used for primary care in the NHS is <a href="https://www.england.nhs.uk/digitaltechnology/digital-primary-care/snomed-ct/">SNOMED CT</a>. Codes are typically stored in data tables. A simple example of part of such a table is below:</p>
 <table class="caption-top table">
 <colgroup>
@@ -253,72 +254,85 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="lab-tests-and-other-measurements" class="level4">
-<h4 class="anchored" data-anchor-id="lab-tests-and-other-measurements">Lab tests and other measurements</h4>
-<p>Results from tests and other measurements can be entered into the record by clinicians, and are usually stored as separate tables that also capture result values and outcomes. In many cases, where tests originated in primary care and where there is interoperability between pathology services and the EHR, these values are automatically sent into the system once results are ready.</p>
-</section>
-<section id="medications-and-prescribing-data" class="level4">
-<h4 class="anchored" data-anchor-id="medications-and-prescribing-data">Medications and prescribing data</h4>
+<section id="gp-software-medication-prescriptions" class="level4">
+<h4 class="anchored" data-anchor-id="gp-software-medication-prescriptions">GP software medication prescriptions</h4>
+<p><img src="../diagrams/sources/source_gp_meds.png" title="" height="70"></p>
 <p>When a prescription for a medication is generated, either one off or as a repeat prescription, this information is recorded in the GP EHR. This information is used to <a href="https://digital.nhs.uk/services/electronic-prescription-service">send prescriptions</a> to a dispenser (like a local pharmacy), as well as populate the patient’s <a href="https://digital.nhs.uk/services/summary-care-records-scr">Summary Care Record</a> with their current medications. The GP EHR also contains records of requests - such as when a patient asks for a prescription to be renewed.</p>
 </section>
-<section id="unstructured-free-text-clinical-record" class="level4">
-<h4 class="anchored" data-anchor-id="unstructured-free-text-clinical-record">Unstructured (free text) clinical record</h4>
+<section id="gp-software-laboratory-test-results" class="level4">
+<h4 class="anchored" data-anchor-id="gp-software-laboratory-test-results">GP software laboratory test results</h4>
+<p><img src="../diagrams/sources/source_gp_labs.png" title="" height="70"></p>
+<p>Results from tests and other measurements can be entered into the record by clinicians, and are usually stored as separate tables that also capture result values and outcomes. In many cases, where tests originated in primary care and where there is interoperability between pathology services and the EHR, these values are automatically sent into the system once results are ready.</p>
+</section>
+<section id="gp-software-free-text-clinical-record" class="level4">
+<h4 class="anchored" data-anchor-id="gp-software-free-text-clinical-record">GP software free text clinical record</h4>
+<p><img src="../diagrams/sources/source_gp_text.png" title="" height="70"></p>
 <p>While GPs make effort to code important information about their patients, a large amount of additional information is found in the unstructured, or free text, record. This simply includes blocks of text that are written to describe encounters and other interactions. As part of the medicolegal record, such text typically contains patients’ descriptions of their medical history, symptoms, and other experiences, as well as examination findings and clinical thought processes. Free text data is not readily accessible for analysis, and may also contain idenfitiable information.</p>
 </section>
-<section id="referrals-data" class="level4">
-<h4 class="anchored" data-anchor-id="referrals-data">Referrals data</h4>
-<p>Primary care referrals to other services are increasingly centralised through the national <a href="https://digital.nhs.uk/services/e-referral-service">e-Referral service</a>, and provide an electronic source of referral data. Some referral pathways remain paper based. Statistical reporting is supported through aggregation of <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times/">referral and waiting list data</a> by referral centres such as hospitals.</p>
-</section>
-<section id="community-pharmacy" class="level4">
-<h4 class="anchored" data-anchor-id="community-pharmacy">Community pharmacy</h4>
+<section id="community-pharmacy-dispensing" class="level4">
+<h4 class="anchored" data-anchor-id="community-pharmacy-dispensing">Community pharmacy dispensing</h4>
+<p><img src="../diagrams/sources/source_pharmacy.png" title="" height="70"></p>
 <p>Most prescriptions are dispensed to patients through designated local pharmacies. <a href="https://digital.nhs.uk/services/electronic-prescription-service">While the electronic prescription service</a> produces an electronic record of prescribed items that can be used for reimbursements, some prescription and dispensing activity are still conducted through paper based records.</p>
 </section>
 </section>
 <section id="secondary-tertiary-care" class="level3">
 <h3 class="anchored" data-anchor-id="secondary-tertiary-care">Secondary / tertiary care</h3>
-<p><img src="sources/secondarycare.jpg" alt="Primary care" title="" height="50"></p>
-<section id="structured-coded-clinical-record-1" class="level4">
-<h4 class="anchored" data-anchor-id="structured-coded-clinical-record-1">Structured (coded) clinical record</h4>
+<section id="hospital-ehr-coded-clinical-record" class="level4">
+<h4 class="anchored" data-anchor-id="hospital-ehr-coded-clinical-record">Hospital EHR coded clinical record</h4>
+<p><img src="../diagrams/sources/source_hosp_codes.png" title="" height="70"></p>
 <p>Data that is coded at point of care is less common in secondary care when compared to primary care, but some Electronic Health Record (EHR) systems such as Epic enable the entry of standard codes such as SNOMED CT into a patient’s record. More commonly, data may be “semi-structured” through forms or flowsheets, where records are made with specific fields (such as “medical history”, “recorded symptoms”, and “examination findings”).</p>
 </section>
-<section id="unstructured-free-text-record-and-reports" class="level4">
-<h4 class="anchored" data-anchor-id="unstructured-free-text-record-and-reports">Unstructured (free text) record and reports</h4>
-<p>The vast majority of patient data in secondary care is found as free text. This includes narrative that records the details of encounters between clinicians and patients (from admission to ward rounds and discharge), as well as records of procedures and operations, nursing and allied health professional notes, and clinical thought processes (for example from a multi-disciplinary meeting). This also includes discharge summaries, clinical letters, and reports of investigations such as radiology imaging or pathology. These type of data may be in different electronic formats, such as MS Word and pdf files, and often contain valuable information that is not found in the structured record. The traditional way of making this type of data analysable, is through health professionals or clinical coders manually collecting relevant data items, and inputting them into a table. Some of this process is being automated by language artificial intelligence (AI) platforms.</p>
+<section id="hospital-ehr-free-text-clinical-record" class="level4">
+<h4 class="anchored" data-anchor-id="hospital-ehr-free-text-clinical-record">Hospital EHR free text clinical record</h4>
+<p><img src="../diagrams/sources/source_hosp_text.png" title="" height="70"></p>
+<p>The vast majority of patient data in secondary care is found as free text. This includes narrative that records the details of encounters between clinicians and patients (from admission to ward rounds and discharge), as well as records of procedures and operations, nursing and allied health professional notes, and clinical thought processes (for example from a cancer multi-disciplinary meeting). This also includes discharge summaries, clinical letters, and reports of investigations such as radiology imaging or pathology. These type of data may be in different electronic formats, such as MS Word and pdf files, and often contain valuable information that is not found in the structured record. The traditional way of making this type of data analysable, is through health professionals or clinical coders manually collecting relevant data items, and inputting them into a table. Some of this process is being automated by language artificial intelligence (AI) platforms.</p>
 </section>
-<section id="lab-tests-and-other-measurements-1" class="level4">
-<h4 class="anchored" data-anchor-id="lab-tests-and-other-measurements-1">Lab tests and other measurements</h4>
+<section id="hospital-ehr-lab-test-results" class="level4">
+<h4 class="anchored" data-anchor-id="hospital-ehr-lab-test-results">Hospital EHR lab test results</h4>
+<p><img src="../diagrams/sources/source_hosp_labs.png" title="" height="70"></p>
 <p>In secondary care settings, laboratory test results and other clinical measurements are also captured in data tables. Laboratory results are often managed through dedicated Laboratory Information Management Systems (LIMS) which are part of, or interface with, the main hospital EHR. Data can be used during care for automated alerting of abnormal results, and for viewing trends.</p>
 </section>
-<section id="secondary-care-medication-and-dispensing-data" class="level4">
-<h4 class="anchored" data-anchor-id="secondary-care-medication-and-dispensing-data">Secondary care medication and dispensing data</h4>
+<section id="hospital-patient-observations" class="level4">
+<h4 class="anchored" data-anchor-id="hospital-patient-observations">Hospital patient observations</h4>
+<p><img src="../diagrams/sources/source_hosp_monitors.png" title="" height="70"></p>
+<p>A rich source of information found only in hospital data, are the frequent physiological measurements that are taken of patients. These may range from measures such as height and weight, to blood pressures, heart rates, temperatures, to real-time recording of vital signs using bedside monitoring. The data may be generated and held in different kinds of system, but most hospital EHRs will allow results to be captured into data tables. In hospitals with intensive care units that have EHR, monitors may output directly into data tables and record detailed trends of vital signs.</p>
+</section>
+<section id="hospital-ehr-medications-chart-pharmacy-systems" class="level4">
+<h4 class="anchored" data-anchor-id="hospital-ehr-medications-chart-pharmacy-systems">Hospital EHR medications chart / pharmacy systems</h4>
+<p><img src="../diagrams/sources/source_hosp_meds.png" title="" height="70"> <img src="../diagrams/sources/source_hosp_dispense.png" title="" height="70"></p>
 <p>Hospital pharmacies use electronic systems to manage general medication orders and dispensing, for both inpatient and outpatient care. For inpatients, electronic medication charts are used by clinicians for viewing and recording prescriptions, timings, and administration, often through Electronic Prescription and Medications Administration (EPMA) systems. The data underlying these systems can be used to show what medications and dosages were prescribed, dispensed, and administered. These systems are often part of or interfaced with the main EHR. They may also integrate decision support features for drug interactions and dosing.</p>
 </section>
-<section id="radiology-dicom" class="level4">
-<h4 class="anchored" data-anchor-id="radiology-dicom">Radiology / DICOM</h4>
-<p>Radiology departments use Picture Archiving and Communication Systems (PACS) to store and manage medical imaging studies. These systems store images in the DICOM (Digital Imaging and Communications in Medicine) format, along with associated metadata. Radiologists’ reports are typically stored in a Radiology Information System (RIS), which is often integrated with the PACS and the main hospital EHR.</p>
+<section id="hospital-ehr-chemotherapy-chart" class="level4">
+<h4 class="anchored" data-anchor-id="hospital-ehr-chemotherapy-chart">Hospital EHR chemotherapy chart</h4>
+<p><img src="../diagrams/sources/source_hosp_chemo.png" title="" height="70"></p>
+<p>While most medications are prescribed and administered in the general record, specialised chemotherapy systems are often used to administer cytotoxic agents, in both inpatient and outpatient/‘day case’ settings.</p>
 </section>
-<section id="histopathology-results-and-reports" class="level4">
-<h4 class="anchored" data-anchor-id="histopathology-results-and-reports">Histopathology results and reports</h4>
-<p>Digital pathology systems are increasingly used to capture, store, and analyze high-resolution images of histopathology slides. These systems allow for remote viewing, automated image analysis, and integration with other clinical data sources. The associated pathology reports are often stored in structured formats within the Laboratory Information System.</p>
+<section id="hospital-radiology-dicom-results" class="level4">
+<h4 class="anchored" data-anchor-id="hospital-radiology-dicom-results">Hospital&nbsp;Radiology / DICOM results</h4>
+<p><img src="../diagrams/sources/source_hosp_dicom.png" title="" height="70"></p>
+<p>Radiology departments use Picture Archiving and Communication Systems (PACS) to store and manage medical imaging studies. These systems store images in the DICOM (Digital Imaging and Communications in Medicine) format, along with associated metadata. Radiologists’ reports are typically stored as free text in a Radiology Information System (RIS), which is often integrated with the PACS and the main hospital EHR. DICOM files are typically extremely large. The ability to extract and use DICOMs for analysis relies heavily on being able to access high quality metadata, which can be used to identify and access images of interest.</p>
 </section>
 <section id="medical-device-outputs" class="level4">
 <h4 class="anchored" data-anchor-id="medical-device-outputs">Medical device outputs</h4>
-<p>Numnerous types of modern medical device, ranging from electrocardiogram machines to ventilators, infusion pumps, and monitoring equipment, have the capability to output data directly into information systems. Some signals data may be stored in time-series databases (for example - heart rate change every minute). Other device outputs may be stored as scanned images. Many devices do not interface with EHR, or do not have a way to extract data in an analysable form.</p>
+<p><img src="../diagrams/sources/source_hosp_device.png" title="" height="70"></p>
+<p>Numnerous types of modern medical device, ranging from electrocardiogram machines, to ventilators and infusion pumps, have the capability to output data directly into information systems. Some signals data may be stored in time-series databases (for example - infusion rate every hour). Other device outputs may be stored as scanned images. Many devices do <em>not</em> interface with EHR, or do not have a way to extract data in an analysable form.</p>
+</section>
+<section id="histopathology-results-and-reports" class="level4">
+<h4 class="anchored" data-anchor-id="histopathology-results-and-reports">Histopathology results and reports</h4>
+<p><img src="../diagrams/sources/source_hosp_histopath.png" title="" height="70"></p>
+<p>Digital pathology systems are increasingly used to capture, store, and analyze high-resolution images of histopathology slides. These systems allow for remote viewing, automated image analysis, and integration with other clinical data sources. The associated pathology reports are often stored as free text within the Laboratory Information System.</p>
 </section>
 <section id="genomic-testing-reports" class="level4">
 <h4 class="anchored" data-anchor-id="genomic-testing-reports">Genomic testing reports</h4>
+<p><img src="../diagrams/sources/source_hosp_genomics.png" title="" height="70"></p>
 <p>While raw sequencing data is generated in genomics testing labs, these data are not typically available for analysis or clinical use. Instead, reports of gene panels, or reports of specific genetic mutations or biomarkers, are passed to hospitals and stored as free text files (e.g.&nbsp;in .pdf format).</p>
 </section>
-<section id="cancer-data" class="level4">
-<h4 class="anchored" data-anchor-id="cancer-data">Cancer data</h4>
-<p>Data generated during cancer care is usually held across multiple systems. These include prescribing systems for chemotherapy, as well as records of multi-disciplinary team (MDT) notes, typically as free text. Other cancer data is found in different free text reports, including from histopathology, and from radiology, or returned from genomics testing laboratories.</p>
 </section>
-</section>
-<section id="specialist-testing-services" class="level3">
-<h3 class="anchored" data-anchor-id="specialist-testing-services">Specialist testing services</h3>
-<p><img src="sources/genomic.jpg" alt="Primary care" title="" height="50"></p>
-<section id="molecular-diagnostic-laboratory-networks" class="level4">
-<h4 class="anchored" data-anchor-id="molecular-diagnostic-laboratory-networks">Molecular diagnostic laboratory networks</h4>
+<section id="specialist-testing" class="level3">
+<h3 class="anchored" data-anchor-id="specialist-testing">Specialist testing</h3>
+<p><img src="../diagrams/sources/source_molecular_labs.png" title="" height="70"></p>
+<section id="moleculargenomic-laboratory-network-systems" class="level4">
+<h4 class="anchored" data-anchor-id="moleculargenomic-laboratory-network-systems">Molecular/genomic laboratory network systems</h4>
 <p>Genomic testing in the NHS is provided through a national testing network. Specifically, the testing for mutations within tumours (somatic molecular testing) is handled by a network of molecular diagnostic laboratories. The direct results from these tests (e.g.&nbsp;sequencing data) are held locally and not directly available for research or analysis use-cases. However, data are passed back to hospitals as reports.</p>
 </section>
 </section>
