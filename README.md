@@ -9,6 +9,7 @@ As of August 2024, the information hosted on the website are still basic and inc
 - [Dr. Joe Zhang](https://www.linkedin.com/in/drjzhang/)
 - [Dr. Jess Morley](https://www.linkedin.com/in/jessicarosemorley/)
 - [Oliver Large](https://www.institute.global/experts/oliver-large)
+- [Prof. James Teo](https://www.linkedin.com/in/prof-james-teo-12158313/)
 
 Working with:
 
