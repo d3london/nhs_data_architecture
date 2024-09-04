@@ -1,3 +1,4 @@
-/.quarto/
+.quarto/
 .bkp
 .DS_Store
+docs/
