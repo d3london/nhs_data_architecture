@@ -2,7 +2,7 @@
 
 Functional, comprehensive, and understandable schematics for NHS England data architecture. This repo contains the source files for [d3london.github.io/nhs_data_architecture](https://d3london.github.io/nhs_data_architecture).
 
-![Main architecture figure](arcscreen.jpg)
+![Main architecture figure](src/arcscreen.jpg)
 
 As of August 2024, the information hosted on the website are still basic and incomplete. We are reaching out to the community to feed back and help make this resource better. Please get in touch through [this form](https://forms.office.com/e/GjThQRhuSg).
 
