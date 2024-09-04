@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs  
+  output-dir: ../docs  
 
 website:
   title: "NHS Data Architecture & Data Flows"
