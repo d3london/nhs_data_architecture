@@ -13,7 +13,7 @@ As of August 2024, the information hosted on the website are still basic and inc
 
 Working with:
 
-<a href="https://www.institute.global/"><img src="logo_tbi.png" alt="Tony Blair Institute" title="" height="70" /></a>
-<a href="https://www.aicentre.co.uk/"><img src="logo_aic.png" alt="London AI Centre" title="" height="70" /></a>
+<a href="https://www.institute.global/"><img src="src/logo_tbi.png" alt="Tony Blair Institute" title="" height="70" /></a>
+<a href="https://www.aicentre.co.uk/"><img src="src/logo_aic.png" alt="London AI Centre" title="" height="70" /></a>
 <a href="https://www.onelondon.online/"><img src="https://www.onelondon.online/wp-content/uploads/2022/08/Logo-3.png" alt="OneLondon SNSDE" title="" height="70" /></a>
 
