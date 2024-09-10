@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: ../docs  
+
+website:
+  title: "NHS Data Architecture & Data Flows"
+  navbar:
+    background: secondary
+  sidebar: 
+    style: "docked"
+    search: false
+    contents:
+        - section: "OVERVIEW"
+          contents: 
+            - href: index.qmd
+              text: Introduction
+            - href: about.qmd
+              text: About                          
+        - section: "NATIONAL"
+          contents: 
+            - href: national/main.qmd
+              text: National Schematic
+            - href: national/sources.qmd
+              text: Data Sources
+            - href: national/flows.qmd
+              text: Data Flows
+format:
+  html:
+    theme: zephyr
+    css: styles.css
+    toc: true
