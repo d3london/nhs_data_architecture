@@ -1,6 +1,6 @@
 # NHS Data Architecture & Data Flows
 
-Functional, comprehensive, and understandable schematics for NHS England data architecture. This repo contains the source files for [d3london.github.io/nhs_data_architecture](https://d3london.github.io/nhs_data_architecture).
+Functional, comprehensive, and understandable schematics for NHS England data architecture. This repo contains the source files for [londonaicentre.github.io/nhs_data_architecture](https://londonaicentre.github.io/nhs_data_architecture/).
 
 ![Main architecture figure](src/arcscreen.jpg)
 
