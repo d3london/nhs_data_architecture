@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://d3london.github.io/nhs_data_architecture/about.html</loc>
-    <lastmod>2024-09-10T14:06:20.275Z</lastmod>
+    <loc>https://londonaicentre.github.io/nhs_data_architecture/national/main.html</loc>
+    <lastmod>2025-11-05T15:19:47.834Z</lastmod>
   </url>
   <url>
-    <loc>https://d3london.github.io/nhs_data_architecture/national/flows.html</loc>
-    <lastmod>2024-09-10T14:06:20.427Z</lastmod>
+    <loc>https://londonaicentre.github.io/nhs_data_architecture/national/sources.html</loc>
+    <lastmod>2025-11-05T15:19:47.834Z</lastmod>
   </url>
   <url>
-    <loc>https://d3london.github.io/nhs_data_architecture/national/main.html</loc>
-    <lastmod>2024-09-10T14:06:20.499Z</lastmod>
+    <loc>https://londonaicentre.github.io/nhs_data_architecture/index.html</loc>
+    <lastmod>2025-11-05T15:19:47.763Z</lastmod>
   </url>
   <url>
-    <loc>https://d3london.github.io/nhs_data_architecture/national/sources.html</loc>
-    <lastmod>2024-09-10T14:06:20.499Z</lastmod>
+    <loc>https://londonaicentre.github.io/nhs_data_architecture/about.html</loc>
+    <lastmod>2025-11-05T15:19:47.627Z</lastmod>
   </url>
   <url>
-    <loc>https://d3london.github.io/nhs_data_architecture/index.html</loc>
-    <lastmod>2024-09-10T14:06:20.423Z</lastmod>
+    <loc>https://londonaicentre.github.io/nhs_data_architecture/national/flows.html</loc>
+    <lastmod>2025-11-05T15:19:47.766Z</lastmod>
   </url>
 </urlset>

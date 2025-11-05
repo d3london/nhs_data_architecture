@@ -1,1 +1,1 @@
-Sitemap: https://d3london.github.io/nhs_data_architecture/sitemap.xml
+Sitemap: https://londonaicentre.github.io/nhs_data_architecture/sitemap.xml
